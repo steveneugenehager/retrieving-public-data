@@ -65,11 +65,12 @@ ls *.txt
 # Summarize the downloaded data files. 
 shopt -s nullglob
 files=(${local_data_dir}/yob*.txt)
-echo "INFO: Count of text/data files is: ${#files[@]}"
+file_count="${#files[@]}"
+echo "INFO: Count of text/data files is: ${file_count}"
 
 # Reasonability check on the number of files retrieved.
-if (( ${#files[@]} < 146 )); then
-    echo "ERROR: Expected about 146 year files; found ${#files[@]}." >&2
+if (( ${file_count} < 146 )); then
+    echo "ERROR: Expected about 146 year files; found ${file_count}." >&2
     exit 1
 fi
 
