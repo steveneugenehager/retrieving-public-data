@@ -1,0 +1,18 @@
+"To Do"s
+
+- How to make this repeatable across multiple environments (dev, pilot, production)
+	- use different projects
+	- use different regions
+
+- Saving Terraform state in GCS buckets.
+
+- Moving the final BQ table in this example into a "curated" or final dataset.
+
+- Using AirFlow to execute the flow.
+
+- Build a final table with name, sex, and birth_cnt (that would be used in generating synthetic data)
+
+- how to use CI/CD to deploy in an automated fashion.
+
+- using multiple users mapped to roles - data user, developer  
+
